@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./excel.ico?v=2">
+    <title>Excel</title>
+</head>
+
+<body>
+    <div class="menu_bar">
+        <!-- Font Family Selection -->
+        <select class="select_f_family">
+            <option value="Courier New" selected>Courier New</option>
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="'Franklin Gothic Medium'">Franklin Gothic Medium</option>
+            <option value="'Trebuchet MS'">Trebuchet MS</option>
+        </select>
+        <!-- Font Size Selection -->
+        <select class="select_f_size">
+            <option value="12">12</option>
+            <option value="14" selected>14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+        <!-- Bold Underline Italics Selection -->
+        <div class="bui_container">
+            <i class="fa-solid fa-bold"></i>
+            <i class="fa-solid fa-underline"></i>
+            <i class="fa-solid fa-italic"></i>
+        </div>
+        <!-- Alignment Selection -->
+        <div class="alignment_container">
+            <i class="fa-solid fa-align-left left"></i>
+            <i class="fa-solid fa-align-center center selected"></i>
+            <i class="fa-solid fa-align-right right"></i>
+            <i class="fa-solid fa-align-justify justify"></i>
+        </div>
+    </div>
+    <div class="formula_container">
+        <input type="text" class="address_bar" readonly>
+        <img src="./function.png" class="formula_img"/>
+        <input type="text" class="formula_bar" placeholder="Formula">
+    </div>
+    <div class="grid_container">
+        <div class="tl_cell"></div>
+        <div class="top_row"></div>
+        <div class="left_col"></div>
+        <div class="grid">
+            <!-- <div class="cell"></div> -->
+        </div>
+    </div>
+    <div class="sheets_container">
+        <div class="add_sheet">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="sheet" myId="1">Sheet 1</div>
+    </div>
+    <script src="init.js"></script>
+    <script src="./menu.js"></script>
+    <script src="script.js"></script>
+    <script src="./formula.js"></script>
+</body>
+
+</html>
