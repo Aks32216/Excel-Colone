@@ -11,7 +11,7 @@ body {
 .menu_bar {
     border: 1px solid gray;
     height: 3rem;
-    /* background-color: green; */
+    background-color: #3FA796;
     display: flex;
     align-items: center;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 i{
-    color: rgb(161, 145, 145);
+    color: rgb(107, 91, 91);
 }
 
 .selected{
@@ -158,7 +158,7 @@ i{
 .sheets_container {
     /* border: 1px solid gray; */
     height: 3rem;
-    /* background-color: lightsalmon; */
+    background-color: #3FA796;
     display: flex;
 }
 
